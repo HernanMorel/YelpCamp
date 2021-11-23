@@ -17,7 +17,7 @@
                         Looks good!
                     </div>
                 </div>
-                <input type="file" name="image" id="" multiple>
+                <!-- <input type="file" name="image" id="" multiple> -->
                 <!-- <div class="mb-3">
                     <label class="form-label" for="image">Image Url</label>
                     <input class="form-control" type="text" id="location" name="campground[image]" required>
@@ -37,12 +37,18 @@
                     </div>
 
                 </div>
-                <div class="mb-3">
+                <div class="mb-0">
                     <label class="form-label" for="description">Description</label>
                     <textarea class="form-control" type="text" id="description" name="campground[description]"
                         required></textarea>
                     <div class="valid-feedback">
                         Looks good!
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="image" class="form-label"></label>
+                    <input type="file" class="form-control" id="image" name="image" multiple>
+                    <div class="invalid-feedback">
                     </div>
                 </div>
                 <div class="mb-3">

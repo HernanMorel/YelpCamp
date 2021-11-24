@@ -2,7 +2,6 @@ if(process.env.NODE_ENV !== "production"){
     require('dotenv').config();
 }
 
-console.log(process.env.SECRET);
 
 const express = require('express');
 const path = require('path');
@@ -17,7 +16,7 @@ const LocalStrategy = require('passport-local');
 const User = require('./models/user');
 
 const userRoutes = require('./routes/users');
-const campgroundRoutes = require('./routes/campgrounds');
+const campgroundRoutes = require('./routes/campgrounds')
 const reviewRoutes = require('./routes/reviews');
 
 mongoose.connect('mongodb://localhost:27017/yelp_camp', { useNewUrlParser: true, useUnifiedTopology: true })

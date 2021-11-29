@@ -5,8 +5,9 @@
                 <h4 class="alert-heading">
                     <%=err.message%>
                 </h4>
-                <pre style="white-space: pre-wrap; word-break: break-word;"><%= err.stack %></pre>
-
+                <% if (process.env.NODE_ENV !=="production" ) { %>
+                    <pre style="white-space: pre-wrap; word-break: break-word;"><%= err.stack %></pre>
+                    <% } %>
             </div>
         </div>
     </div>

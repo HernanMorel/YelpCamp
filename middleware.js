@@ -10,13 +10,14 @@ module.exports.isLoggedIn = (req, res, next) => {
         req.flash('error','You must be signed in first!');
         return res.redirect('/login');
     }
-    next()
+    next();
 }
-module.exports.validateCampground= (req,res,next) => {
+module.exports.validateCampground= (req, res, next) => {
     const {error} = campgroundSchema.validate(req.body);
+    console.log(req.body);
     if(error){
-        const msg = error.details.map(el => el.message).join(',')
-        throw new ExpressError(msg, 400)
+    const msg = error.details.map(el => el.message).join(',')
+    throw new ExpressError(msg, 400)
     } else {
         next();
     }

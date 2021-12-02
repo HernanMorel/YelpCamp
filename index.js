@@ -1,8 +1,8 @@
- if(process.env.NODE_ENV !== "production"){
-    require('dotenv').config();
- }
+//  if(process.env.NODE_ENV !== "production"){
+//     require('dotenv').config();
+//  }
 
-
+ require('dotenv').config();
 
 const express = require('express');
 const path = require('path');
@@ -16,6 +16,7 @@ const passport = require('passport');
 const LocalStrategy = require('passport-local');
 const User = require('./models/user');
 const helmet = require('helmet');
+const MongoStore = require('connect-mongo');
 
 const mongoSanitize = require('express-mongo-sanitize');
 
@@ -23,10 +24,9 @@ const mongoSanitize = require('express-mongo-sanitize');
 const userRoutes = require('./routes/users');
 const campgroundRoutes = require('./routes/campgrounds')
 const reviewRoutes = require('./routes/reviews');
-// const dbURL = process.env.DB_URL
-const MongoDBStore= require("connect-mongo")(session);
+const dbUrl = 'mongodb://localhost:27017/yelp_camp';
 
-mongoose.connect( 'mongodb://localhost:27017/yelp_camp', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect( dbUrl, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         console.log("Database Connected")
     })
@@ -51,32 +51,38 @@ app.use(mongoSanitize({
 
 // const secret = process.env.SECRET || 'thisshouldbeabettersecret!';
 
-// const store = new MongoDBStore({
-//     url: dbUrl,
-//     secret,
-//     touchAfter: 24 * 60 * 60
-// });
+ const store = MongoStore.create({
+     mongoUrl: dbUrl,
+     touchAfter: 24 * 60 * 60,
+     crypto: {
+         secret: 'thisshouldbeabettersecret!'
+     }
+ });
 
-// store.on("error", function (e) {
-//     console.log("SESSION STORE ERROR", e)
-// })
+ store.on("error", function (e) {
+     console.log("SESSION STORE ERROR", e)
+ })
 
 
 const sessionConfig = {
+    store,
     name: 'session',
     secret: 'thisshouldbeabettersecret!',
     resave: false,
     saveUninitialized: true,
     cookie: {
-        httpOnly: true,
+        httpOnly: false,
         // secure: true,
         expires: Date.now() + 1000 * 60 * 60 * 24 * 7,
         maxAge: 1000 * 60 * 60 * 24 * 7
     }
 }
-app.use(session(sessionConfig))
+app.use(session(sessionConfig));
 app.use(flash());
 app.use(helmet());
+// app.use(helmet({
+//     frameguard: false,
+//   }));
 
 const scriptSrcUrls = [
     "https://stackpath.bootstrapcdn.com/",
@@ -111,7 +117,6 @@ app.use(
             scriptSrc: ["'unsafe-inline'", "'self'", ...scriptSrcUrls],
             styleSrc: ["'self'", "'unsafe-inline'", ...styleSrcUrls],
             workerSrc: ["'self'", "blob:"],
-            childSrc: ["blob:"],
             objectSrc: [],
             imgSrc: [
                 "'self'",
@@ -143,7 +148,7 @@ app.use((req, res, next) => {
 })
 
 app.use('/', userRoutes);
-app.use('/campgrounds', campgroundRoutes);
+app.use('/campgrounds', campgroundRoutes)
 app.use('/campgrounds/:id/reviews', reviewRoutes)
 
 app.get('/', (req, res) => {
@@ -151,7 +156,7 @@ app.get('/', (req, res) => {
 });
 
 
-app.all("*", (req, res, next) => {
+app.all('*', (req, res, next) => {
     next(new ExpressError('Page Not Found', 404))
 })
 

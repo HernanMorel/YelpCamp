@@ -13,7 +13,7 @@ new mapboxgl.Marker()
 .setPopup(
     new mapboxgl.Popup({offset: 25})
     .setHTML(
-        `<h6>${campground.title}</h6><p>${campground.location}</p>`
+        `<h7><b>${campground.title}</b></h7><p>${campground.location}</p>`
     )
     .setMaxWidth("200px")
 )

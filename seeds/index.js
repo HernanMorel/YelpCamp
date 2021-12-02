@@ -37,12 +37,12 @@
                         },
                         images:[
                             {
-                                url: 'https://res.cloudinary.com/decgp7cjk/image/upload/v1638301249/YelpCamp/o6rms3y4oizpdvb9icid.jpg',
-                                filename: 'YelpCamp/o6rms3y4oizpdvb9icid'
+                                url: 'https://res.cloudinary.com/decgp7cjk/image/upload/v1638475058/YelpCamp/xzhsee6w2u6gs5vyiqk6.jpg',
+                                filename: 'YelpCamp/xzhsee6w2u6gs5vyiqk6'
                             },
                             {
-                                url: 'https://res.cloudinary.com/decgp7cjk/image/upload/v1638301249/YelpCamp/o6rms3y4oizpdvb9icid.jpg',
-                                filename: 'YelpCamp/o6rms3y4oizpdvb9icid'
+                                url: 'https://res.cloudinary.com/decgp7cjk/image/upload/v1638475065/YelpCamp/jjwvufgtjypfr10iyrsr.jpg',
+                                filename: 'YelpCamp/jjwvufgtjypfr10iyrsr'
                             }
                         ]
                     })

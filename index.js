@@ -6,9 +6,9 @@
 const express = require('express');
 const path = require('path');
 const mongoose = require('mongoose');
+const ejsMate = require('ejs-mate');
 const session = require('express-session');
 const flash = require('connect-flash');
-const ejsMate = require('ejs-mate');
 const ExpressError = require('./utils/ExpressError');
 const methodOverride = require('method-override');
 const passport = require('passport');
@@ -20,7 +20,7 @@ const userRoutes = require('./routes/users');
 const campgroundRoutes = require('./routes/campgrounds')
 const reviewRoutes = require('./routes/reviews');
 
-const MongoStore = require('connect-mongo');
+const MongoStore = require('connect-mongo')
 
 const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/yelp_camp' 
 
@@ -166,7 +166,6 @@ app.use((err, req, res, next) => {
 })
 
 const port = process.env.PORT || 3000;
-
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log(`Serving on port ${port}`)
 })

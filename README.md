@@ -1,4 +1,4 @@
-# Título
+# Yelpcamp
 
 Proyecto final del bootcamp de desarrollo web al que asistí. Incluye JavaScript, Express, Node, Mongoose y Mongo DB como tecnologías principales. Esta es la primera aplicación web que hice, es un proyecto de clase con una escala y características considerables. Como no incorpora ninguna librería, pude aprender y poner en práctica la cantidad de trabajo que conlleva construir una aplicación de tamaño tan importante. Permite a los usuarios añadir, editar, calificar y eliminar sus campamentos favoritos. Utiliza fuentes basadas en la nube de Cloudinary y Mongo-Cloud atlas como bases de datos de almacenamiento de imágenes. Este proyecto fue diseñado con prácticas de enrutamiento RESTful y autenticación vía Passport, con validaciones para evitar el mal uso.
 

@@ -23,7 +23,7 @@ Este proyecto me enseñó la importancia de los estándares web y las mejores pr
 $ git clone https://github.com/HernanMorel/YelpCamp
 
 # Go into the repository
-$ cd cv-app
+$ cd YelpCamp
 
 # Remove current origin repository
 $ git remote remove origin
@@ -69,7 +69,7 @@ This project taught me about the importance of web standards and best practices 
 $ git clone https://github.com/HernanMorel/YelpCamp
 
 # Go into the repository
-$ cd cv-app
+$ cd YelpCamp
 
 # Remove current origin repository
 $ git remote remove origin

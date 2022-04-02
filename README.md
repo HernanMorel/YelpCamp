@@ -1,48 +1,3 @@
-# Yelpcamp
-
-Proyecto final del bootcamp de desarrollo web al que asistí. Incluye JavaScript, Express, Node, Mongoose y Mongo DB como tecnologías principales. Esta es la primera aplicación web que hice, es un proyecto de clase con una escala y características considerables. Como no incorpora ninguna librería, pude aprender y poner en práctica la cantidad de trabajo que conlleva construir una aplicación de tamaño tan importante. Permite a los usuarios añadir, editar, calificar y eliminar sus campamentos favoritos. Utiliza fuentes basadas en la nube de Cloudinary y Mongo-Cloud atlas como bases de datos de almacenamiento de imágenes. Este proyecto fue diseñado con prácticas de enrutamiento RESTful y autenticación vía Passport, con validaciones para evitar el mal uso.
-
-## Lecciones Aprendidas
-
-Este proyecto me enseñó la importancia de los estándares web y las mejores prácticas que acompañan a la construcción de un proyecto tan profundo. La paginación y los componentes reutilizables se hicieron con JavaScript simple, lo que me hace apreciar el valor de los frameworks y las herramientas modernas. La seguridad del usuario y la autenticación también tuvieron un papel importante a lo largo de esta aplicación, procesos tales como la creación de cuentas, permisos / limitaciones, y el almacenamiento de contraseñas fueron todos los elementos de alto valor de la construcción de este proyecto. Aprendí la importancia de ser paciente durante la fase de depuración del desarrollo. Google, StackOverflow y MDN se convirtieron en herramientas vitales para mí en este proyecto. El despliegue de esta aplicación a través de Heroku me enseñó las herramientas CLI que Salesforce/Heroku proporcionan, lo que hacen que el almacenamiento y el alojamiento del proyecto sea muy fácil. 
-
-## Posibles Funciones Adicionales
-
-* Me gustaría añadir una función de traducción, que permita a las personas que no hablan inglés contribuir con sus campings favoritos al sitio.
-* También me gustaría añadir una función de clasificación, que permitiera a los usuarios clasificar los campings mejor valorados en su área de interés.
-
-## Implementación
-
-[Este es un enlace externo a la aplicación](https://yelpcamp2021-2.herokuapp.com/)
-
-
-## Cómo Iniciar
-
-``` 
-# Clone this repository
-$ git clone https://github.com/HernanMorel/YelpCamp
-
-# Go into the repository
-$ cd YelpCamp
-
-# Remove current origin repository
-$ git remote remove origin
-
-```
-
-```
-# Install dependencies
-$ npm install
-
-# Start development server
-$ npm start
-
-```
-
-*ENG*
----
-
-
 
 # Yelcamp
 
@@ -86,5 +41,47 @@ $ npm start
 
 ```
 
+*Es*
+---
 
 
+# Yelpcamp
+
+Proyecto final del bootcamp de desarrollo web al que asistí. Incluye JavaScript, Express, Node, Mongoose y Mongo DB como tecnologías principales. Esta es la primera aplicación web que hice, es un proyecto de clase con una escala y características considerables. Como no incorpora ninguna librería, pude aprender y poner en práctica la cantidad de trabajo que conlleva construir una aplicación de tamaño tan importante. Permite a los usuarios añadir, editar, calificar y eliminar sus campamentos favoritos. Utiliza fuentes basadas en la nube de Cloudinary y Mongo-Cloud atlas como bases de datos de almacenamiento de imágenes. Este proyecto fue diseñado con prácticas de enrutamiento RESTful y autenticación vía Passport, con validaciones para evitar el mal uso.
+
+## Lecciones Aprendidas
+
+Este proyecto me enseñó la importancia de los estándares web y las mejores prácticas que acompañan a la construcción de un proyecto tan profundo. La paginación y los componentes reutilizables se hicieron con JavaScript simple, lo que me hace apreciar el valor de los frameworks y las herramientas modernas. La seguridad del usuario y la autenticación también tuvieron un papel importante a lo largo de esta aplicación, procesos tales como la creación de cuentas, permisos / limitaciones, y el almacenamiento de contraseñas fueron todos los elementos de alto valor de la construcción de este proyecto. Aprendí la importancia de ser paciente durante la fase de depuración del desarrollo. Google, StackOverflow y MDN se convirtieron en herramientas vitales para mí en este proyecto. El despliegue de esta aplicación a través de Heroku me enseñó las herramientas CLI que Salesforce/Heroku proporcionan, lo que hacen que el almacenamiento y el alojamiento del proyecto sea muy fácil. 
+
+## Posibles Funciones Adicionales
+
+* Me gustaría añadir una función de traducción, que permita a las personas que no hablan inglés contribuir con sus campings favoritos al sitio.
+* También me gustaría añadir una función de clasificación, que permitiera a los usuarios clasificar los campings mejor valorados en su área de interés.
+
+## Implementación
+
+[Este es un enlace externo a la aplicación](https://yelpcamp2021-2.herokuapp.com/)
+
+
+## Cómo Iniciar
+
+``` 
+# Clone this repository
+$ git clone https://github.com/HernanMorel/YelpCamp
+
+# Go into the repository
+$ cd YelpCamp
+
+# Remove current origin repository
+$ git remote remove origin
+
+```
+
+```
+# Install dependencies
+$ npm install
+
+# Start development server
+$ npm start
+
+```

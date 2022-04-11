@@ -1,49 +1,4 @@
 
-# Yelcamp
-
-Final project from the web development bootcamp I attended. It includes JavaScript, express, node, mongoose and Mongo DB as its core technologies. This is the first web application I did, it is a class-lead project with sizeable scale and features. Since it does not incorporate any libraries, I was able to learn and implement the amount of work that goes into building such a considerably-sized application. This allows users to add, edit, rate and delete their favorite campgrounds around the world. It uses cloud-based resources of Cloudinary and Mongo-Cloud atlas as storage databases for images. This project was designed with RESTful routing practices and authentication via Passport, with validations in place to avoid misuse.
-
-## Lessons Learned
-
-This project taught me about the importance of web standards and best practices that go along with building such an in depth-project. Pagination and reusable components were made with plain JavaScript, which make me appreciate the value in modern frameworks and tools. User security and authentication also played an important role all throughout this app, processes such as account building, permissions/limitations, and password storage were all high-value takeaways from building this project. I learned the importance of being patient throughout the debugging phase of development. Google, StackOverflow and MDN became vital tools for this project. Deploying this app through Heroku taught me the CLI tools Salesforce/Heroku provide, which make storing and hosting the project a breeze.  
-
-## Potential Future Features
-
-* I would want to add a translation feature, allowing non-English speakers to contribute their favorite campgrounds to the site.
-* I would also want to add a sorting feature, allowing users to sort through top-rated campgrounds in their area of interest.
-
-## Deployment
-
-[This is an external link to the app](https://yelpcamp2021-2.herokuapp.com/)
-
-## Get Started
-
-
-``` 
-# Clone this repository
-$ git clone https://github.com/HernanMorel/YelpCamp
-
-# Go into the repository
-$ cd YelpCamp
-
-# Remove current origin repository
-$ git remote remove origin
-
-```
-
-
-```
-# Install dependencies
-$ npm install
-
-# Start development server
-$ npm start
-
-```
-
-*Es*
----
-
 
 # Yelpcamp
 
@@ -76,6 +31,53 @@ $ cd YelpCamp
 $ git remote remove origin
 
 ```
+
+```
+# Install dependencies
+$ npm install
+
+# Start development server
+$ npm start
+
+```
+
+
+*En*
+---
+
+
+# Yelcamp
+
+Final project from the web development bootcamp I attended. It includes JavaScript, express, node, mongoose and Mongo DB as its core technologies. This is the first web application I did, it is a class-lead project with sizeable scale and features. Since it does not incorporate any libraries, I was able to learn and implement the amount of work that goes into building such a considerably-sized application. This allows users to add, edit, rate and delete their favorite campgrounds around the world. It uses cloud-based resources of Cloudinary and Mongo-Cloud atlas as storage databases for images. This project was designed with RESTful routing practices and authentication via Passport, with validations in place to avoid misuse.
+
+## Lessons Learned
+
+This project taught me about the importance of web standards and best practices that go along with building such an in depth-project. Pagination and reusable components were made with plain JavaScript, which make me appreciate the value in modern frameworks and tools. User security and authentication also played an important role all throughout this app, processes such as account building, permissions/limitations, and password storage were all high-value takeaways from building this project. I learned the importance of being patient throughout the debugging phase of development. Google, StackOverflow and MDN became vital tools for this project. Deploying this app through Heroku taught me the CLI tools Salesforce/Heroku provide, which make storing and hosting the project a breeze.  
+
+## Potential Future Features
+
+* I would want to add a translation feature, allowing non-English speakers to contribute their favorite campgrounds to the site.
+* I would also want to add a sorting feature, allowing users to sort through top-rated campgrounds in their area of interest.
+
+## Deployment
+
+[This is an external link to the app](https://yelpcamp2021-2.herokuapp.com/)
+
+## Get Started
+
+
+``` 
+# Clone this repository
+$ git clone https://github.com/HernanMorel/YelpCamp
+
+# Go into the repository
+$ cd YelpCamp
+
+# Remove current origin repository
+$ git remote remove origin
+
+```
+
 
 ```
 # Install dependencies
